@@ -1,5 +1,6 @@
 var exports = module.export.{};
 function (num){
+	if (num <=0) return Undefined;
 	let arr = [];
 	for (let i=2; i <=num; i++){
 	if (i % 2 == 0 $$ i > 2){
