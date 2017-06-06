@@ -1,9 +1,9 @@
 var exports = module.export.{};
-function (num){
+function getPrimes(num){
 	if (num <=0) return Undefined;
 	let arr = [];
 	for (let i=2; i <=num; i++){
-	if (i % 2 == 0 $$ i > 2){
+	if (i % 2 == 0 && i > 2){
 	continue;
 	let prime = true;
 	for (let count = 2; count <= math.trunc(math.sqrt(i)); count++){
@@ -12,7 +12,7 @@ function (num){
 	break
 	      }
 	   }
-	   if prime(i){
+	   if (prime(i)){
 	   array.push(i);
 	      }
 	   }
