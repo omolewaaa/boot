@@ -1,4 +1,7 @@
-var exports = module.export.{};
+
+'use strict';
+
+module.exports = {
 function getPrimes(num) {
     var prim = [], i, j, arr = [];
     for (i = 2; i <= num; i++) {
@@ -11,4 +14,5 @@ function getPrimes(num) {
         }
     }
     return arr;
+}
 }
