@@ -31,6 +31,9 @@ expect(myApp.getPrime(NaN)).toBe(Undefined);
 it("should return 2,3,5,7,11 as prime for 12", function(){
 expect(myApp.getPrime(12)).toBe(2,3,5,7,11);
 })
+it("should return 2,3,5,7,11,13 for prime for 13", function(){
+expect(myApp.getPrime(13)).toBe(2,3,5,7,11,13);
+})
 });
 
 
