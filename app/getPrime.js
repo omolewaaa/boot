@@ -1,21 +1,14 @@
 var exports = module.export.{};
-function getPrimes(num){
-	if (num <=0) return Undefined;
-	let arr = [];
-	for (let i=2; i <=num; i++){
-	if (i % 2 == 0 && i > 2){
-	continue;
-	let prime = true;
-	for (let count = 2; count <= math.trunc(math.sqrt(i)); count++){
-	if (i % count == 0){
-	prime = false;
-	break
-	      }
-	   }
-	   if (prime(i)){
-	   array.push(i);
-	      }
-	   }
-    return array
-	}
+function getPrimes(num) {
+    var prim = [], i, j, arr = [];
+    for (i = 2; i <= num; i++) {
+        if (!prim[i]) {
+            
+            arr.push(i);
+             for (j = i << 1; j <= num; j += i) {
+                prim[j] = true;
+            }
+        }
+    }
+    return arr;
 }
