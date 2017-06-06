@@ -1,19 +1,17 @@
 // testing code goes here
-
-'use strict';
 const myApp = require('../app/getPrime.js');
 
 describe ("getting prime numbers", function (){
 it("should return 2,3 as prime for 5", function(){
 expect (myApp.getPrime(5)).toBe(2,3,5);
 })
-it("should return 2,3,5,7 as prime for 7 " function(){
+it("should return 2,3,5,7 as prime for 7 ", function(){
   expect(myApp.getPrime(7)).toBe(2,3,5,7);
 })
-it("should return 2,3,5,7 as prime for 10" function(){
+it("should return 2,3,5,7 as prime for 10", function(){
 expect(myApp.getPrime(10)).toBe(2,3,5,7);
 })
-it("should return 2,3,5,7 as prime for 9" function(){
+it("should return 2,3,5,7 as prime for 9", function(){
 expect(myApp.getPrime(9)).toBe(2,3,5,7);
 })
 it("should return undefined as prime for 0", function(){
